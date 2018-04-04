@@ -1,0 +1,48 @@
+<html>
+<head>
+<script src="student.js"></script>
+<link rel="stylesheet" type="text/css" href="student.css">
+</head>
+<body>
+<h1>
+<div class="head">
+STUDENT DETAILS
+</div>
+</h1>
+<div class="whole">
+<form name="form">
+<div class="container">
+<b>Name:</b>&nbsp &nbsp &nbsp &nbsp<input type="text" id="name" name="name"><br>
+<br>
+<b>Branch:</b> &nbsp &nbsp <input type="text" id="branch" name="branch"><br>
+<br>
+<b>Roll No.:</b>&nbsp &nbsp<input type="number" id="roll" name="roll"><br>
+<br>
+Marks:</div><div class="marks">REC-301 &nbsp <input type="number" id="maths" name="maths"><br><br>RCS-301 &nbsp <input type="number" id="physics" name="physics"><br><br>RCS-302 &nbsp <input type="number" id="chem" name="chem"><br><br>RCS-303  &nbsp<input type="number" id="hindi" name="hindi"><br><br>RAS302 &nbsp <input type="number" id="history" name="history"><br>
+<br></div>
+<input type="button" value="Compute"  onclick="compute()">&nbsp &nbsp &nbsp
+<input type="button" value="Add" onclick="generate_table()">&nbsp &nbsp &nbsp
+<input type="RESET" value="Delete"><br>
+<br><div class="container">
+<b>Sum:</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="number" id="sum" name="sum"/><br>
+<br>
+<b>Percentage:</b><input type="number"  id="percentage" name="percentage"/><br>
+<br>
+<b>Grade:</b>&nbsp &nbsp &nbsp &nbsp<input type="text" id="grade" name="grade"/><br>
+ <br>
+ </div>
+</form>
+<div class="head"><b>TABLE</b></div><br>
+<table id="table">
+<tr>
+<th>Name</th>
+<th>Branch</th>
+<th>Roll No.</th>
+<th>Total</th>
+<th>Percentage</th>
+<th>Grade</th>
+</tr>
+</table>
+</div>
+</body>
+</html>
